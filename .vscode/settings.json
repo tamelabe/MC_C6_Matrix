@@ -1,0 +1,8 @@
+{
+    "files.associations": {
+        "random": "c",
+        "ratio": "c",
+        "cstring": "c",
+        "sstream": "c"
+    }
+}
