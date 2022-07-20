@@ -1,33 +1,5 @@
 #include "s21_matrix.h"
-/*
-int main() {
-    double count = 1.0;
-    matrix_t A;
-    matrix_t B;
-    matrix_t C;
-    s21_create_matrix(2, 3, &A);
-    s21_create_matrix(3, 2, &B);
-    for (int i = 0; i < A.rows; i++) {
-        for (int j = 0 ; j < A.columns; j++) {
-            A.matrix[i][j] = count;
-            B.matrix[j][i] = count;
-            count = count + 1.0;
-        }
-    }
 
-    int res = s21_transpose(&A, &C);
-    for (int i = 0; i < A.rows; i++) {
-      for (int j = 0; j < A.columns; j++) {
-          printf("[%d][%d] A = %.0lf B = %.0lf C = %.0lf\n", i, j, A.matrix[i][j], B.matrix[i][j], C.matrix[i][j]);
-      }
-    }
-    int res_eq = s21_eq_matrix(&B, &C);
-    s21_remove_matrix(&A);
-    s21_remove_matrix(&B);
-    s21_remove_matrix(&C);
-  return 0;
-}
-*/
 int s21_create_matrix(int rows, int columns, matrix_t *result) {
   int res_code = INCRT_MTRX;
   result->matrix = NULL;
